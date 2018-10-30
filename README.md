@@ -1,7 +1,7 @@
-# johnetsky.github.io
+# Cebucradugeorge.github.io
 
 ## Aplicatii web
 
 **Hello world**
 
-[My site is](https://johnetsky.github.io)
+[My site is](https://Cebucradugeorge.github.io)
