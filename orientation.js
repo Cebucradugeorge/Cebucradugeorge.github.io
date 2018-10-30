@@ -9,6 +9,6 @@ document.getElementById("id_z").innerHTML = e.alpha;
   var canvas=document.getElementById("id_canvas");
   var context =canvas.getContext("2d");
   context.beginPath();
-  context.arc(canvas.width / 2, canvas.height/2, 30,0,2*MATH.PI);
+  context.arc(canvas.width / 2, canvas.height/2, 30,0,2*Math.PI);
   context.stroke();
 }
