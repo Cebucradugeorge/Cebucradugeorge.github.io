@@ -23,8 +23,8 @@ document.getElementById("id_acc_z").innerHTML =  "acc z =" + acc_z;
 function la_schimbare_gyro(e)
 {
 document.getElementById("id_x").innerHTML = "gyro x =" + e.beta;
-document.getElementById("id_y").innerHTML = "gyro y =" + e.beta;
-document.getElementById("id_z").innerHTML = "gyro z =" + e.beta;
+document.getElementById("id_y").innerHTML = "gyro y =" + e.gamma;
+document.getElementById("id_z").innerHTML = "gyro z =" + e.alpha;
   var canvas=document.getElementById("id_canvas");
   var context =canvas.getContext("2d");
   var R=10;
