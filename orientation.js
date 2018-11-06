@@ -7,6 +7,8 @@ function la_schimbare_acc(e)
 document.getElementById("id_acc_x").innerHTML = e.accelerationIncludingGravity.x;
 document.getElementById("id_acc_y").innerHTML = e.accelerationIncludingGravity.y;
 document.getElementById("id_acc_z").innerHTML = e.accelerationIncludingGravity.z;
+  
+  
 }
 
 
