@@ -9,8 +9,10 @@ document.getElementById("id_z").innerHTML = e.alpha;
   var canvas=document.getElementById("id_canvas");
   var context =canvas.getContext("2d");
   var R=10;
-  context.clearRect(0,0,canvas.width);
-  context.beginPath();,canvas.height);
+  context.clearRect(0,0,canvas.width,canvas.height);
+  
+  context.beginPath();
+  
   context.arc(canvas.width / 2 + e.gamma / 90 * (canvas.width/2 - R), canvas.height / 2 + e.beta/ 90 +( canvas.heit /2-R),R,0,2*Math.PI);
   context.stroke();
 }
