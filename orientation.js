@@ -14,8 +14,8 @@ document.getElementById("id_acc_x").innerHTML =  "acc x =" + acc_x;
 document.getElementById("id_acc_y").innerHTML =  "acc y =" + acc_y;
 document.getElementById("id_acc_z").innerHTML =  "acc z =" + acc_z;
   
-  document.getElementById("id_rot_x").innerHTML = Math.atan(acc_x/acc_z)* 180 /Math.PI;
-  document.getElementById("id_rot_y").innerHTML = Math.atan(acc_x/acc_z)* 180 /Math.PI;
+  document.getElementById("id_rot_x").innerHTML = Math.atan(acc_x/acc_x)* 180 /Math.PI;
+  document.getElementById("id_rot_y").innerHTML = Math.atan(acc_x/acc_y)* 180 /Math.PI;
   
 }
 
