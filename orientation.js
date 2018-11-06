@@ -14,6 +14,9 @@ document.getElementById("id_acc_x").innerHTML = var "acc_x =" + acc_x;
 document.getElementById("id_acc_y").innerHTML = var "acc_y =" + acc_y;
 document.getElementById("id_acc_z").innerHTML = var "acc_z =" + acc_z;
   
+  document.getElementById("id_rot_x").innerHTML = Math.atan(acc_x/acc_z)* 180 /Math.PI;
+  document.getElementById("id_rot_y").innerHTML = Math.atan(acc_x/acc_z)* 180 /Math.PI;
+  
 }
 
 
