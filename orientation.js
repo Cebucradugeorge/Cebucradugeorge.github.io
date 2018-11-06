@@ -10,9 +10,9 @@ function la_schimbare_acc(e)
   var acc_y = e.accelerationIncludingGravity.y;
   var acc_z = e.accelerationIncludingGravity.z;
   
-document.getElementById("id_acc_x").innerHTML = var "acc_x =" + acc_x;
-document.getElementById("id_acc_y").innerHTML = var "acc_y =" + acc_y;
-document.getElementById("id_acc_z").innerHTML = var "acc_z =" + acc_z;
+document.getElementById("id_acc_x").innerHTML =  "acc x =" + acc_x;
+document.getElementById("id_acc_y").innerHTML =  "acc y =" + acc_y;
+document.getElementById("id_acc_z").innerHTML =  "acc z =" + acc_z;
   
   document.getElementById("id_rot_x").innerHTML = Math.atan(acc_x/acc_z)* 180 /Math.PI;
   document.getElementById("id_rot_y").innerHTML = Math.atan(acc_x/acc_z)* 180 /Math.PI;
