@@ -8,7 +8,7 @@ for (var i=0; i< e.changedTouches.length; i++)
 {
 	var context = canvas.getContext("2d");
 	context.beginPath();
-	context.arc(e.changedTouches.item(i).pageX, e.changedTouches.item(i).pageY,20,0,2 * Math,PI);
+	context.arc(e.changedTouches.item(i).pageX, e.changedTouches.item(i).pageY,20,0,2 * Math.PI);
 	context.stroke();
 	
 	
