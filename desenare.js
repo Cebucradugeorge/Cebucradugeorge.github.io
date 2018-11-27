@@ -17,7 +17,7 @@ for (var i=0; i< e.changedTouches.length; i++)
 {
 	var context = canvas.getContext("2d");
 	context.beginPath();
-	context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top,20,0,2 * Math.PI);
+	context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top,10,0,2 * Math.PI);
 	context.stroke();
 	var last_position = {x: 0, y: 0, id: 0};
     lastX = e.changedTouches.item(i).pageX;
