@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.27.6";
+document.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.27.7";
 
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch);
@@ -21,8 +21,8 @@ for (var i=0; i< e.changedTouches.length; i++)
 	context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top,10,0,2 * Math.PI);
 	context.stroke();
 	var last_position = {x: 0, y: 0, id: 0};
-    lastX = e.changedTouches.item(i).pageX;
-	lastY = e.changedTouches.item(i).pageY;	
+    last_position.x = e.changedTouches.item(i).pageX;
+	last_position.y = e.changedTouches.item(i).pageY;	
 	last_position.id = e.changedTouches.item(i).identifier;
 	last_position_array.push(last_position);
 	
@@ -57,7 +57,8 @@ for (var i=0; i< e.changedTouches.length; i++)
 function on_touch_end(e)
 {
 	for (var i=0; i< e.changedTouches.length; i++)
-	{var j = 0;
+	{
+		var j = 0;
 		for (; i< e.changedTouches.length; i++)
 		if(last_position_array[j].id == e.changedTouches.item(i).identifier)
 			break;
