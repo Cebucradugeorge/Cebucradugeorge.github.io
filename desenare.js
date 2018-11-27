@@ -54,7 +54,7 @@ for (var i=0; i< e.changedTouches.length; i++)
 }
 	
 }
-function on_touch_move(e)
+function on_touch_end(e)
 {
 	for (var i=0; i< e.changedTouches.length; i++)
 	{var j = 0;
