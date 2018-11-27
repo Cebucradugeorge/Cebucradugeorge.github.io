@@ -39,7 +39,7 @@ for (var i=0; i< e.changedTouches.length; i++)
 	context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top,20,0,2 * Math.PI);
 	context.stroke();
 	context.beginPath();
-	context.lineWidth = 10;
+	context.lineWidth = 20;
 	var j = 0;
 	for (; j< last_position_array.length; j++)
 		if(last_position_array[j].id == e.changedTouches.item(i).identifier)
