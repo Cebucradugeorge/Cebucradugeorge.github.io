@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.20.6";
+document.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.27.7";
 
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch);
@@ -28,7 +28,9 @@ for (var i=0; i< e.changedTouches.length; i++)
 	context.beginPath();
 	context.lineWidth = 1;
 	context.arc(e.changedTouches.item(i).pageX - rect.left, e.changedTouches.item(i).pageY - rect.top,20,0,2 * Math.PI);
-	context.lineWidth = 40;
+	context.stroke();
+	context.beginPath();
+	context.lineWidth = 20;
 	context.moveTo(lastX - rect.left ,lastY - rect.top)
 	context.lineTo(e.changedTouches.item(i).pageX - rect.left , e.changedTouches.item(i).pageY - rect.top);
 	lastX = e.changedTouches.item(i).pageX;
