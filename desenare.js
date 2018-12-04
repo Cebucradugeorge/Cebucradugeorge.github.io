@@ -43,6 +43,7 @@ function on_touch(e)
 					10,
 					0, 2 * Math.PI
 					);
+					context.fill();
 		context.stroke();
 		
 		last_position_array.push(last_position);
