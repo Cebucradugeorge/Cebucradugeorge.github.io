@@ -23,5 +23,5 @@ function vorbeste()
 }
 function sfarsit_vorbeste()
 {
-doc.getElementById("id_button_vorbeste").disabled = false;	
+document.getElementById("id_button_vorbeste").disabled = false;	
 }
