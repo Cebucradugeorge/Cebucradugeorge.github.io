@@ -17,7 +17,7 @@ function vorbeste()
 	enunt.rate = 1.5;
 	enunt.volume = 0.7;
 	enunt.onend = sfarsit_vorbeste;
-	doc.getElementById("id_button_vorbeste").disabled = true;
+	document.getElementById("id_button_vorbeste").disabled = true;
 	synth.speak(enunt);
 	
 }
