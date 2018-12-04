@@ -13,7 +13,7 @@ function vorbeste()
 {
 	var enunt = new SpeechSynthesisUtterance();
 	enunt.text = document.getElementById("id_text").value;
-	enunt.lang = "em-US";
+	enunt.lang = "de-DE";
 	synth.speak(enunt);
 	
 }
