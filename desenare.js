@@ -1,5 +1,5 @@
 document.getElementById("id_logic_version").innerHTML = 
-		"Logic version = 2018.12.4.5";
+		"Logic version = 2018.12.4.2";
 		
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch);
@@ -12,7 +12,16 @@ var rect = canvas.getBoundingClientRect();
 
 var last_position_array = [];
 
-
+function genereaza_culoare()
+{
+	var sir = "#";
+	var litere = "123456789ABCDEF";
+	for (var i = 0; i < 6; i++)
+	{
+		sir +=litere[Math.ceil(Math.random() * 16)];
+	}
+	return sir;
+}
 function on_touch(e)
 {
 	e.preventDefault();
@@ -31,6 +40,7 @@ function on_touch(e)
 		last_position.x = e.changedTouches.item(i).pageX;		
 		last_position.y = e.changedTouches.item(i).pageY;
 		last_position.id = e.changedTouches.item(i).identifier;
+		last_position.color = genereaza_culoare();
 		last_position_array.push(last_position);
 	}
 }
