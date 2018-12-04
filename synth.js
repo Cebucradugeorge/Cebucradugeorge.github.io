@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.12.04.4";
+document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.12.04.5";
 var synth = window.speechSynthesis;
 function afiseaza_voci()
 {
@@ -14,7 +14,8 @@ function vorbeste()
 	var enunt = new SpeechSynthesisUtterance();
 	enunt.text = document.getElementById("id_text").value;
 	enunt.lang = "em-US";
-	enunt.rate = 7;
+	enunt.rate = 1.5;
+	enunt.volume = 0.7;
 	synth.speak(enunt);
 	
 }
