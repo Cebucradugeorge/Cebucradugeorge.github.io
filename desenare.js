@@ -28,19 +28,23 @@ function on_touch(e)
 	
 	for (var i = 0; i < e.changedTouches.length; i++){
 		var context = canvas.getContext("2d");
+		var last_position = {x: 0, y: 0, id: 0};
+		last_position.x = e.changedTouches.item(i).pageX;		
+		last_position.y = e.changedTouches.item(i).pageY;
+		last_position.id = e.changedTouches.item(i).identifier;
+		last_position.color = genereaza_culoare();
 		context.beginPath();
 		context.lineWidth = 1;
+		context.strokeStyle = last_position.color;
+		context.fillStyle = last_position.color;
+		
 		context.arc(e.changedTouches.item(i).pageX - rect.left,
 					e.changedTouches.item(i).pageY - rect.top,
 					10,
 					0, 2 * Math.PI
 					);
 		context.stroke();
-		var last_position = {x: 0, y: 0, id: 0};
-		last_position.x = e.changedTouches.item(i).pageX;		
-		last_position.y = e.changedTouches.item(i).pageY;
-		last_position.id = e.changedTouches.item(i).identifier;
-		last_position.color = genereaza_culoare();
+		
 		last_position_array.push(last_position);
 	}
 }
